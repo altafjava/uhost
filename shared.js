@@ -5,18 +5,21 @@ var selectPlanButtons = document.querySelectorAll('.plan button');
 var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
-modalNoButton.addEventListener('click', closeModal);
+if (modalNoButton) {
+  // To avoid this error added if condition. [Uncaught TypeError: Cannot read property 'addEventListener' of null]
+  modalNoButton.addEventListener('click', closeModal);
+}
+// To avoid this error added if condition. [Uncaught TypeError: Cannot read property 'addEventListener' of null]
 backdrop.addEventListener('click', function () {
   // mobileNav.style.display = 'none';
-  mobileNav.classList.remove('open')
+  mobileNav.classList.remove('open');
   closeModal();
 });
-
 
 function closeModal() {
   // backdrop.style.display = 'none';
   // modal.style.display = 'none';
-  modal.classList.remove('open');
+  if (modal) modal.classList.remove('open');
   backdrop.classList.remove('open');
 }
 
@@ -34,6 +37,6 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
 toggleButton.addEventListener('click', function () {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';
-  mobileNav.classList.add('open')
-  backdrop.classList.add('open')
+  mobileNav.classList.add('open');
+  if (backdrop) backdrop.classList.add('open');
 });
