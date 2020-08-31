@@ -1,17 +1,11 @@
 .testimonial {
   font-size: 1.2rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
+  max-width: 94rem;
 }
-
-.testimonial__list {
-  width: 80%;
-  margin: auto;
-}
-
 .testimonial:first-of-type {
   margin-top: 6rem;
 }
-
 .testimonial__image-container {
   width: 50%;
   max-width: 600px;
@@ -63,4 +57,18 @@
 
 .testimonial__text {
   margin: 0.18rem;
+}
+@media (max-width: 40rem) {
+  .testimonial {
+    margin: unset;
+  }
+  .testimonial__image-container {
+    width: 100%;
+    max-width: unset;
+    display: block;
+  }
+  .testimonial__info {
+    display: block;
+    width: 100%;
+  }
 }
