@@ -33,13 +33,14 @@ main {
   vertical-align: middle;
 }
 .toggle-button {
-  width: 3rem;
+  display: none;
+  /* width: 3rem;
   background: transparent;
   border: none;
   cursor: pointer;
   padding-top: 0;
   padding-bottom: 0;
-  vertical-align: middle;
+  vertical-align: middle; */
 }
 .toggle-button:focus {
   outline: none;
@@ -176,4 +177,19 @@ main {
 }
 .open {
   display: block !important;
+}
+@media (max-width: 40rem) {
+  .main-nav {
+    display: none;
+  }
+  .toggle-button {
+    display: inline;
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
 }
