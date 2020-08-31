@@ -76,7 +76,7 @@
 .plan ul li {
   margin: 0.5rem 0;
 }
-@media (min-width:42rem){
+@media (min-width: 42rem) {
   .div__plan-list {
     width: 100%;
     margin: auto;
@@ -159,11 +159,6 @@
   padding: 0;
   text-align: center;
 }
-.key-feature {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
-}
 .key-feature__image {
   background: #ffcede;
   width: 8rem;
@@ -178,4 +173,12 @@
   color: white;
   font-weight: bold;
   font-size: 1.25rem;
+}
+@media (min-width: 42rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    max-width: 25rem;
+    vertical-align: top;
+  }
 }
