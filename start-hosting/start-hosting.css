@@ -24,3 +24,7 @@ main {
   display: inline-block;
   width: auto;
 }
+.signup-page button[type='submit'] {
+  display: block;
+  margin-top: 1rem;
+}
