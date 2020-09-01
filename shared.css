@@ -175,6 +175,12 @@ main {
 .button:focus {
   outline: none;
 }
+.button[disabled] {
+  cursor: not-allowed;
+  background: #ccc;
+  border-color: #868686;
+  color: #868686;
+}
 .open {
   display: block !important;
 }
