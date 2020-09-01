@@ -5,3 +5,17 @@ main {
   text-align: center;
   color: #ff5454;
 }
+.signup-form {
+  padding: 1rem;
+}
+.signup-form label {
+  font-weight: bold;
+}
+.signup-page label,
+.signup-page select,
+.signup-page input {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
