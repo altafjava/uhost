@@ -50,6 +50,12 @@ main {
   background: #2ddf5c;
   border: #0e4f1f;
 }
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+  border-color: red !important;
+  background: #facbcb;
+}
 .signup-page button[type='submit'] {
   display: block;
   margin-top: 1rem;
