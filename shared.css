@@ -114,16 +114,18 @@ main {
 }
 
 .mobile-nav__items {
-  width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .mobile-nav__item a {
