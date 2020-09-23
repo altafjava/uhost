@@ -87,6 +87,9 @@ main {
   color: white;
   border-bottom: white solid 3px;
 }
+.main-nav__item--cta {
+  animation: wiggle 200ms 1s 10 alternate none;
+}
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
@@ -202,5 +205,14 @@ main {
   }
   .main-footer__link {
     margin: 0.5rem 0;
+  }
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
   }
 }
