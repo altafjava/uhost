@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color:#ff1b68;
+}
 * {
   box-sizing: border-box;
 }
@@ -55,7 +60,7 @@ main {
 }
 
 .main-header__brand {
-  color: #0e4f1f;
+  color: var(--dark-green,#0e4f1f);
   text-decoration: none;
   font-weight: bold;
 }
@@ -77,7 +82,7 @@ main {
 }
 .main-nav__item a,
 .mobile-nav__item a {
-  color: #0e4f1f;
+  color: var(--dark-green);
   text-decoration: none;
   font-weight: bold;
   padding: 0.19rem 0;
@@ -93,7 +98,7 @@ main {
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
-  background: #ff1b68;
+  background: var(--highlight-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
@@ -102,7 +107,7 @@ main {
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
   background: white;
-  color: #ff1b68;
+  color: var(--highlight-color);
   border: none;
 }
 .mobile-nav {
@@ -158,10 +163,10 @@ main {
   color: #ccc;
 }
 .button {
-  background: #0e4f1f;
+  background: var(--dark-green);
   color: white;
   font: inherit;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--dark-green);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: bold;
@@ -170,8 +175,8 @@ main {
 .button:hover,
 .button:active {
   background: white;
-  color: #0e4f1f;
-  border: 1.5px solid #0e4f1f;
+  color: var(--dark-green);
+  border: 1.5px solid var(--dark-green);
 }
 .button:focus {
   outline: none;
